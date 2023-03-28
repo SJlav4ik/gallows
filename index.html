@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="modal" class="modalCloset">
+        <div>
+            <div id ="modalText"></div>
+            <button id="modalClose">Close</button>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <div id="buttonStart"><button>Старт/рестарт</button></div>
+                <div id="discriptionHolder"></div>
+            </td>
+            <td>
+                <div id="imgHolder"><img id="image" src=".\imgs\discription.jpg" alt=""></div> 
+            </td>
+        </tr>
+        <tr >
+            <td>
+                <div id="inputButton">
+                <form id="inputForm" onsubmit="return false">
+                    <input
+                    type="text"
+                    id="input"
+                    required
+                    maxlength="1"
+                    pattern="[а-яё]{1,1}"
+                    title="Введите один русский символ" 
+                    style= "text-transform: lowercase"/>
+                    <button type="submit">-></button>
+                </form>
+            </div>
+            </td>
+            <td>
+                <div style="display: flex;">
+                <div id="divHolder">
+                    
+                </div>
+            </div>
+            </td>
+        </tr>
+    </table>
+    
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
